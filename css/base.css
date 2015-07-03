@@ -1,0 +1,92 @@
+html,
+body {
+	font: normal 12px Arial, Verdana, Helvetica;
+}
+.clear {
+	clear: both;
+	margin: 0;
+}
+.ease {
+	transition: all .15s ease-in-out; 
+	-moz-transition: all .15s ease-in-out; 
+	-webkit-transition: all .15s ease-in-out;
+}
+/* Wrap */
+#wrap {
+	background: #fff;
+	color: #999;
+	font: normal 12px Arial, Verdana, Helvetica;
+}
+/* Section */
+section {
+	clear: both;
+}
+section .inner {
+	max-width: 970px;
+	margin: 0 auto;
+}
+/* Header Area */
+#headerArea {
+	position: relative;
+	z-index: 5;
+}
+/* Topbar */
+#topbarArea {
+	background: #000;
+	color: #fff;
+	font-size: 11px;
+}
+/* gnavArea */
+#gnavArea {
+	float: right;
+	margin: 45px 8px 0 0;
+}
+#gnavArea > li {
+	position: relative;
+	float: left;
+	display: inline;
+	margin: 0 16px 15px 16px;
+	padding: 0 15px 0 0;
+	background: transparent url('../images/arrow_down_black.png') no-repeat center right scroll;
+	color: #000;
+	font-size: 16px;
+	cursor: pointer;
+	transition: all .15s ease-in-out; 
+	-moz-transition: all .15s ease-in-out; 
+	-webkit-transition: all .15s ease-in-out;
+}
+#gnavArea > li:hover {
+	color: #fd926d;
+}
+#gnavArea > li > ul {
+	display: none;
+	position: absolute;
+	width: 150px;
+	top: 0;
+	left: -10px;
+	padding: 25px 0 0 0;
+}
+#gnavArea > li:hover > ul {
+	display: block;
+}
+#gnavArea > li > ul > li > a {
+	display: block;
+	padding: 8px 10px;
+	margin: 1px 0 0 0;
+	text-decoration: none;
+	background: #fd926d;
+	color: #fff;
+	font-size: 14px;
+	transition: all .15s ease-in-out; 
+	-moz-transition: all .15s ease-in-out; 
+	-webkit-transition: all .15s ease-in-out;
+}
+#gnavArea > li > ul > li > a:hover {
+	background: #dd6b44;
+}
+/* Banner Area */
+#bannerArea {
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+}
