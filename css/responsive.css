@@ -1,0 +1,229 @@
+/* Responsive ============================================= */
+@media (max-width: 529px) {
+  section .inner {
+		width: 300px;
+	}
+	#topbarArea .inner > div:first-child {
+		float: none;
+		margin: 0;
+		padding: 10px;
+		text-align: center;
+	}
+	#topbarArea .inner > ul {
+		float: left;
+		margin: 0 0 0 25px;
+		border-top: 1px solid #444;
+	}
+	#headerArea h1 {
+		float: none;
+		margin: 20px 0 0 0;
+		text-align: center;
+	}
+	.yourCart {
+		float: none;
+	}
+	#gnavArea {
+		float: none;
+		margin: 0;
+	}
+	#gnavArea > li {
+		float: none;
+		display: block;
+		width: 100%;
+		padding: 0;
+		margin: 5px 0;
+		background-position: top right;
+	}
+	#gnavArea > li > ul {
+		position: relative;
+		padding: 0;
+		width: 100%;
+	}
+	#bannerArea .nav {
+		display: none;
+	}
+	#bannerArea > img {
+		top: 0;
+	}
+	#wrap section:nth-child(4) form label,
+	#wrap section:nth-child(4) form input:first-child	{
+		float: left;
+	}
+	#wrap section:nth-child(4) form label {
+		margin: 0 0 5px 0;
+	}
+	#wrap section:nth-child(4) form input[type=text] {
+		clear: both;
+	}
+	#wrap section:nth-child(4) .findUsHere {
+		width: initial;
+	}
+	#wrap section:nth-child(4) .findUsHere label {
+		display: none;
+	}
+	#wrap section:nth-child(4) .findUsHere ul li a {
+		width: 100px;
+		height: 100px;
+	}
+	#wrap section:nth-child(5) .inner > div > div {
+		float: none;
+		width: 100%;
+	}
+	#wrap section:nth-child(5) .inner > div > div img {
+		width: 100%;
+	}
+	#wrap section:nth-child(5) .inner > div > div:last-child > div:last-child > div {
+		margin: 0;
+	}
+	#feature > .inner ul > li {
+		padding: 10px 8px;
+		font-size: 11px;
+	}
+	#feature > .inner ul:last-child li {
+		width: 34px;
+		height: 34px;
+		background-size: 20% !important;
+	}
+	#feature > .inner ul:last-child {
+		display: block;
+		float: none;
+	}
+	#feature > .inner ul:last-child li {
+		width: 50%;
+		background-size: 5% !important;
+	}
+	#feature .wrapper .inner {
+		margin-left: 50px;
+	}
+	.clearance_items {
+		margin: 0 0 0 40px
+	}
+	.clearance_items li {
+		margin-bottom: 20px;
+	}
+	#wrap section:nth-child(8) ul li {
+		margin: 0 15px 15px 0;
+	}
+	#wrap section:nth-child(8) ul li:nth-child(3n+4) {
+		clear: left;
+	}
+	#wrap section:nth-child(10) .inner span {
+		display: block;
+		margin: 0 0 10px 0;
+	}
+	#wrap section:nth-child(10) .inner img {
+		margin: 0 7px 7px 0;
+	}
+	#footerLinks .inner > div {
+		clear: both;
+		padding: 0 0 15px 0;
+		margin: 0 0 15px 0;
+		border-bottom: 1px dotted #ccc;
+		float: none;
+		width: 100%;
+		overflow: hidden;
+	}
+	#footerLinks .inner > div ul li {
+		display: block;
+		float: none;
+	}
+	#footerArea .inner {
+		text-align: center;
+	}
+	#footerArea .inner div {
+		float: none;
+		text-align: center;
+	}
+}
+@media (min-width: 530px) and (max-width: 779px) {
+  section .inner {
+		width: 470px;
+	}
+	#gnavArea {
+		margin: 0;
+	}
+	#gnavArea > li {
+		margin: 0 14px 15px 14px;
+	}
+	#wrap section:nth-child(4) form label,
+	#wrap section:nth-child(4) form input:first-child	{
+		float: left;
+	}
+	#wrap section:nth-child(4) form label {
+		margin: 0 0 5px 0;
+	}
+	#wrap section:nth-child(4) form input[type=text] {
+		clear: both;
+	}
+	#wrap section:nth-child(4) .findUsHere label {
+		display: none;
+	}
+	#wrap section:nth-child(4) .findUsHere ul li a {
+		width: 74px;
+		height: 74px;
+	}
+	#wrap section:nth-child(5) img {
+		width: 100%;
+	}
+	#wrap section:nth-child(5) .inner > div > div:last-child > div:last-child > div {
+		margin-top: 0;
+	}
+	#feature > .inner ul > li {
+		padding: 10px;
+		font-size: 12px;
+	}
+	#feature > .inner ul:last-child li {
+		width: 34px;
+		height: 34px;
+		background-size: 20% !important;
+	}
+	.clearance_items {
+		margin-right: 0;
+	}
+	.clearance_items li {
+		margin-bottom: 30px;
+	}
+	.clearance_items li:nth-child(even) {
+		margin-right: 0;
+	}
+	#wrap section:nth-child(8) ul li {
+		margin-bottom: 10px;
+	}
+	#wrap section:nth-child(10) .inner img {
+		margin-bottom: 7px;
+	}
+	#wrap section:nth-child(10) .inner span {
+		display: block;
+		margin: 0 0 10px 0;
+	}
+	#footerLinks .inner > div {
+		width: 33.3%;
+		margin: 0;
+		min-height: 170px;
+	}
+}
+@media (min-width: 780px) and (max-width: 1046px) {
+  section .inner {
+		width: 720px;
+	}
+	#gnavArea > li {
+		margin: 0 5px 15px 5px;
+	}
+	#wrap section:nth-child(5) img {
+		width: 100%;
+	}
+	#wrap section:nth-child(5) .inner > div > div:last-child > div:last-child > div {
+		margin-top: 0;
+	}
+	.clearance_items li:last-child {
+		display: none;
+	}
+	#wrap section:nth-child(8) ul li {
+		margin-bottom: 10px;
+	}
+	#footerLinks .inner > div {
+		width: 25%;
+		margin: 0;
+		min-height: 160px;
+	}
+}

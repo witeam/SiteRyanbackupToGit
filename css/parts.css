@@ -320,8 +320,12 @@
 	position: relative;
 }
 #feature .wrapper ul {
+	display: none;
 	position: absolute;
 	top: 5px;
+}
+#feature .wrapper ul:first-child {
+	display: block;
 }
 #feature .wrapper ul li,
 .clearance_items li {
@@ -344,7 +348,8 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: initial;
+	width: 50px;
+	height: 50px;
 }
 #feature .wrapper ul li > div,
 .clearance_items li > div {
@@ -488,6 +493,7 @@
 }
 #wrap section:nth-child(8) ul li {
 	display: inline;
+	float: left;
 	margin: 0 44px 0 0;
 }
 #wrap section:nth-child(8) ul li img {
@@ -533,7 +539,7 @@
 }
 #footerLinks .inner > div {
 	float: left;
-	margin: 0 30px 0 0;
+	margin: 0 50px 0 0;
 }
 #footerLinks .inner > div:last-child {
 	margin: 0;
@@ -555,5 +561,52 @@
 #footerLinks .inner > div ul li a:hover {
 	text-decoration: underline;
 }
-#footerLinks .inner > div:nth-child(5) {
+#footerLinks .inner > div:nth-child(5) ul {
+	width: 140px;
+}
+#footerLinks .inner > div:nth-child(5) ul li {
+	display: inline;
+	float: left;
+	margin: 0 10px 10px 0;
+	transition: all .15s ease-in-out; 
+	-moz-transition: all .15s ease-in-out; 
+	-webkit-transition: all .15s ease-in-out;
+}
+#footerLinks .inner > div:nth-child(5) ul li:hover {
+	opacity: 0.75;
+}
+#footerLinks .inner > div:last-child {
+	margin: 15px 0 0 0;
+}
+/* Footer Area */
+#footerArea {
+	background: #000;
+	color: #8d8d8d;
+}
+#footerArea .inner {
+	padding: 20px 0;
+	overflow: hidden;
+}
+#footerArea a {
+	text-decoration: none;
+	color: #8d8d8d;
+	font-size: 11px;
+}
+#footerArea ul {
+	float: left;
+	margin: 10px 0;
+}
+#footerArea ul li {
+	display: inline;
+	margin: 0 10px;
+}
+#footerArea ul li:first-child {
+	margin-left: 0;
+}
+#footerArea .inner div {
+	float: right;
+	margin: 5px 0 0 0;
+	text-align: right;
+	font-size: 11px;
+	line-height: 8px;
 }

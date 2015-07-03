@@ -1,0 +1,12 @@
+
+Rendered Time: 11 hrs
+
+Completed:
+- HTML from PSD Conversion
+- Dropdown submenus on main navigation and currency selection
+- Most links and icons have easing effect
+- Responsive on 3 media queries (based on number of images in the 2nd slider) with jQuery adjustments for responsive banner and slider
+- Responsive sliding banner with navigation and auto-count of slides for automatic number of navigation button
+- Added 3 dummy slides on banner
+- Responsive 2nd slider with previous and next buttons, and with tabs, complete with hover effects
+- Items on 2nd slider and Clearance items are on JSON Array for dynamic entries and rendered via jQuery

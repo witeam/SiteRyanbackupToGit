@@ -17,6 +17,7 @@
 		<link href="css/reset.css" rel="stylesheet">
 		<link href="css/base.css" rel="stylesheet">
 		<link href="css/parts.css" rel="stylesheet">
+		<link href="css/responsive.css" rel="stylesheet">
   </head>
   <body>
     
@@ -177,7 +178,7 @@
 			<section>
 				<div class="inner">
 					<div></div>
-					<img src="images/img_ribbon_circle.png" alt="" />
+					<img src="images/img_ribbon_circle.png" alt="Clearance 50% Off" />
 					<ul class="clearance_items"></ul>
 				</div><!-- /.wrapper -->
 			</section>
@@ -196,6 +197,7 @@
 						<li><img src="images/logo_edwin.jpg" alt="EDWIN" /></li>
 						<li><img src="images/logo_grenson.jpg" alt="GRENSON" /></li>
 					</ul>
+					<div class="clear"></div>
 				</div><!-- /.wrapper -->
 			</section>
 		
@@ -208,7 +210,7 @@
 		
 			<section>
 				<div class="inner">
-					We accept
+					<span>We accept</span>
 					<img src="images/icon_card_visa.jpg" alt="VISA" />
 					<img src="images/icon_card_mastercard.jpg" alt="Mastercard" />
 					<img src="images/icon_card_paypal.jpg" alt="Paypal" />
@@ -277,6 +279,25 @@
 							<li><a href="#"><img src="images/icon_social_vimeo_2.png" alt="Vimeo" /></a></li>
 						</ul>
 					</div>
+					<div>
+						<img src="images/img_seal.png" alt="100% Secured" />
+					</div>
+				</div><!-- /.wrapper -->
+			</section><!-- /#footerLinks -->
+		
+			<section id="footerArea">
+				<div class="inner">
+					<ul>
+						<li><a href="#">Privacy &amp; Cookies</a></li> |
+						<li><a href="#">Terms &amp; Conditions</a></li> |
+						<li><a href="#">Accessibility</a></li> |
+						<li><a href="#">Store Directory</a></li> |
+						<li><a href="#">About Us</a></li>
+					</ul>
+					<div>
+						&copy; LookShop.com<br /><br />
+						All Rights Reserved
+					</div>
 				</div><!-- /.wrapper -->
 			</section>
 			
@@ -286,11 +307,19 @@
 			$(document).ready(function() {
 				slidesCount = $('#slider li').length;
 				setSlider();
-				playSlide();				
+				playSlide();
+				renderFeatItems(feat_hot, feat_des, feat_feat, feat_lst, clearance_items);	
+				$('#bannerArea .nav').html('');
+				for(var x=0; x<slidesCount; x++) {
+					if(x == 0) {
+						$('#bannerArea .nav').append('<li class="active"></li>');
+					} else {
+						$('#bannerArea .nav').append('<li class="normal"></li>');
+					}
+				}
 				$('#bannerArea .nav > li').click(function() {
 					selectSlide($(this).index()+1);
 				});
-				renderFeatItems(feat_hot, feat_des, feat_feat, feat_lst, clearance_items);
 			});
 		</script>
 		
