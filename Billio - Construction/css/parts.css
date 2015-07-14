@@ -1,0 +1,613 @@
+/* Pagebar Area */
+#pagebarArea {
+	position: relative;
+	z-index: 100;
+}
+#pagebarArea .inner,
+#pagebarArea .inner .row {
+	padding: 0 !important;
+}
+#pagebarArea .row {
+	margin: 0;
+}
+#pagebarArea .row > div {
+	padding: 15px 0 13px 0;
+	border: 1px solid #e2e1e1;
+	border-right: none;
+	background: #f0efef;
+}
+#pagebarArea .row > div:last-child {
+	border-right: 1px solid #e2e1e1;
+}
+#pagebarArea .row > div > div span::before {
+	padding: 15px 0;
+	font-size: 42px;
+	color: #e5a300;
+}
+#pagebarArea .row > div:nth-child(2) > div span {
+	float: right;
+	margin: 0 -10px 0 0;
+}
+#pagebarArea .row > div > div:last-child p:first-child {
+	margin: 9px 0 0 4px;
+	font: 300 14px Open Sans;
+}
+#pagebarArea .row > div > div:last-child p:last-child {
+	margin: 3px 0 0 5px;
+	font: 300 17px Montserrat;
+}
+/* Banner Area */
+#bannerArea {
+	position: relative;
+	z-index: 0;
+	margin: -46px 0 0 0;
+}
+#bannerArea .inner,
+#bannerArea .inner .row {
+	padding: 0 !important;
+}
+#bannerArea .nav {
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 999;
+	opacity: 0;
+	transition: all .3s ease-in-out; 
+	-moz-transition: all .3s ease-in-out; 
+	-webkit-transition: all .3s ease-in-out;
+}
+#bannerArea .nav button {
+	position: absolute;
+	z-index: 999;
+	top: 265px;
+	width: 40px;
+	height: 40px;
+	border: none;
+	cursor: pointer;
+	outline: none;
+}
+#bannerArea .nav button:first-child {
+	left: 20px;
+	background: transparent url('../images/large_left.png') repeat scroll 0 0;
+}
+#bannerArea .nav button:last-child {
+	right: 20px;
+	background: transparent url('../images/large_right.png') repeat scroll 0 0;
+}
+#bannerArea .nav button:hover {
+	background-position: 0 40px;
+}
+#bannerArea:hover .nav {
+	opacity: 1;
+}
+#slides {
+	position: relative;
+	width: 100%;
+	height: 700px;
+}
+#slides > div:nth-child(1) {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #fff url('../images/img-slide-construct-01-685pxs.jpg') no-repeat scroll top center;
+}
+#slides > div:nth-child(1) .container {
+	margin: 70px auto;
+	padding: 50px;
+}
+#slides > div:nth-child(1) .container .caption p {
+	width: 700px;
+}
+#slides > div:nth-child(1) .container .caption p:nth-child(1) {
+	font-size: 22px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #e5a300;
+}
+#slides > div:nth-child(1) .container .caption h2 {
+	font-size: 48px;
+}
+#slides > div:nth-child(1) .container .caption > div {
+	margin: 40px 0 0 0;
+}
+#slides > div:nth-child(1) .container .caption > div > a {
+	float: left;
+	margin: 0 30px 0 0;
+	padding: 12px 20px;
+	font: 700 14px Montserrat;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: all .15s ease-in-out; 
+	-moz-transition: all .15s ease-in-out; 
+	-webkit-transition: all .15s ease-in-out;
+}
+#slides > div:nth-child(1) .container .caption > div > a:first-child {
+	border: 1px solid #444;
+	color: #444;
+}
+#slides > div:nth-child(1) .container .caption > div > a:last-child {
+	background: #e5a300;
+	border: 1px solid #e5a300;
+	color: #fff;
+}
+#slides > div:nth-child(1) .container .caption > div > a:hover {
+	background: #444;
+	border-color: #444;
+	color: #fff;
+}
+/* Options */
+#wrap section:nth-child(5) {
+	margin-top: -245px;
+}
+#wrap section:nth-child(5) .inner,
+#wrap section:nth-child(5) .inner .row {
+	padding: 0 !important;
+}
+#wrap section:nth-child(5) .row > div {
+	position: relative;
+}
+#wrap section:nth-child(5) .row > div > div:nth-child(1) {
+	position: relative;
+	padding: 5px;
+	height: 193px;
+	overflow: hidden;
+}
+#wrap section:nth-child(5) .row > div > div:nth-child(1) img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	transition: all .15s ease-in-out; 
+	-moz-transition: all .15s ease-in-out; 
+	-webkit-transition: all .15s ease-in-out;
+}
+#wrap section:nth-child(5) .row > div:hover > div:nth-child(1) img {
+	width: 110%;
+}
+#wrap section:nth-child(5) .row > div > div:nth-child(1) > div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #000;
+	opacity: 0;
+	transition: all .15s ease-in-out; 
+	-moz-transition: all .15s ease-in-out; 
+	-webkit-transition: all .15s ease-in-out;
+}
+#wrap section:nth-child(5) .row > div:hover > div:nth-child(1) > div {
+	opacity: 0.75;
+	-moz-animation: fadeInUpCus2 .2s ease-in;
+	-webkit-animation: fadeInUpCus2 .2s ease-in;
+	animation:fadeInUpCus2 .2s ease-in;
+}
+#wrap section:nth-child(5) .row > div > div:nth-child(2) h3,
+#wrap section:nth-child(5) .row > div > div:nth-child(2) a {
+	position: absolute;
+	top: 100px;
+	left: 0;
+	right: 0;
+	margin: 0;
+	text-align: center;
+	font: 300 18px "Montserrat";
+	color: #fff;
+	text-transform: uppercase;
+	transition: all .3s ease-in-out; 
+	-moz-transition: all .3s ease-in-out; 
+	-webkit-transition: all .3s ease-in-out;
+}
+#wrap section:nth-child(5) .row > div:hover > div:nth-child(2) h3 {
+	top: 50px;
+}
+#wrap section:nth-child(5) .row > div > div:nth-child(2) a {
+	opacity: 0;
+	top: 120px;
+	left: 30%;
+	right: 30%;
+	padding: 15px;
+	background: #e5a300;
+	color: #fff;
+	text-decoration: none;
+	font-size: 12px;
+}
+#wrap section:nth-child(5) .row > div:hover > div:nth-child(2) a {
+	top: 90px;
+	opacity: 1;
+	transition: all .3s ease-in-out; 
+	-moz-transition: all .3s ease-in-out; 
+	-webkit-transition: all .3s ease-in-out;
+}
+#wrap section:nth-child(5) .row > div > div:nth-child(2) a:hover {
+	opacity: 0.9;
+}
+/* Welcome Aboard */
+#wrap section:nth-child(6) .inner .container > .row:first-child {
+	margin: 20px 0;
+	text-align: center;
+}
+#wrap section:nth-child(6) .inner .container > .row:first-child p {
+	margin: 0 auto;
+	width: 70%;
+}
+#wrap section:nth-child(6) .inner .container > .row:last-child > div:nth-child(1) > div,
+#wrap section:nth-child(6) .inner .container > .row:last-child > div:nth-child(2) > div {
+	padding: 15px;
+	border: 1px solid #ddd;
+	overflow: hidden;
+}
+#wrap section:nth-child(6) .inner .container > .row:last-child > div:nth-child(1) > div img,
+#wrap section:nth-child(6) .inner .container > .row:last-child > div:nth-child(2) > div img {
+	margin-bottom: 20px;
+	width: 100%;
+}
+#wrap section:nth-child(6) .inner .container > .row:last-child > div:nth-child(1) > div h4,
+#wrap section:nth-child(6) .inner .container > .row:last-child > div:nth-child(2) > div h4 {
+	text-transform: uppercase;
+	font: 800 18px Montserrat;
+}
+#wrap section:nth-child(6) .inner .container > .row:last-child > div:nth-child(1) > div h4,
+#wrap section:nth-child(6) .inner .container > .row:last-child > div:nth-child(1) > div p,
+#wrap section:nth-child(6) .inner .container > .row:last-child > div:nth-child(2) > div h4,
+#wrap section:nth-child(6) .inner .container > .row:last-child > div:nth-child(2) > div p {
+	margin: 0;
+	padding: 10px 10px;
+	line-height: 24px;
+}
+#wrap section:nth-child(6) .inner .container > .row:last-child > div:nth-child(1) > div > a,
+#wrap section:nth-child(6) .inner .container > .row:last-child > div:nth-child(2) > div > a {
+	float: left;
+	display: block;
+	margin: 15px 0 10px 10px;
+	padding: 10px 20px;
+	border: 1px solid #444;
+	color: #444;
+	font-weight: 800;
+	font-size: 14px;
+	text-decoration: none;
+	text-transform:uppercase;
+	transition: all .3s ease-in-out; 
+	-moz-transition: all .3s ease-in-out; 
+	-webkit-transition: all .3s ease-in-out;
+}
+#wrap section:nth-child(6) .inner .container > .row:last-child > div:nth-child(1) > div > a:hover,
+#wrap section:nth-child(6) .inner .container > .row:last-child > div:nth-child(2) > div > a:hover {
+	background: #444;
+	color: #fff;
+}
+#wrap section:nth-child(6) .inner .container > .row:last-child > div:nth-child(3) > div > div:first-child {
+	padding-top: 0;
+}
+#wrap section:nth-child(6) .inner .container > .row:last-child > div:nth-child(3) > div > div {
+	margin: 0;
+	padding: 30px 0;
+	border-bottom: 1px solid #ddd;
+}
+#wrap section:nth-child(6) .inner .container > .row:last-child > div:nth-child(3) > div > div:last-child {
+	border: none;
+}
+#wrap section:nth-child(6) .inner .container > .row:last-child > div:nth-child(3) > div > div > div:first-child {
+	padding-left: 0;
+}
+#wrap section:nth-child(6) .inner .container > .row:last-child > div:nth-child(3) > div > div > div h4 {
+	font-size: 18px;
+	line-height: 24px;
+}
+#wrap section:nth-child(6) .inner .container > .row:last-child > div:nth-child(3) > div > div > div h4,
+#wrap section:nth-child(6) .inner .container > .row:last-child > div:nth-child(3) > div > div > div a {
+	color: #333;
+	font-family: Montserrat;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+/* Who We Are */
+#wrap section:nth-child(7) img {
+	margin: 30px 0 40px 0;
+	width: 100%;
+}
+#wrap section:nth-child(7) h3 {
+	font: 900 20px "Montserrat";
+	color: #444;
+}
+#wrap section:nth-child(7) p {
+	line-height: 24px;
+}
+#wrap section:nth-child(7) .chart {
+	margin: 30px 0 0 0;
+	font-size: 20px;
+}
+#wrap section:nth-child(7) .chart span {
+	float: left;
+	margin: 15px 0 0 0;
+}
+#wrap section:nth-child(7) .chart div {
+	clear: both;
+	float: left;
+	width: 100%;
+	margin: 5px 0 10px 0;
+	height: 15px;
+	background: #e5a300;
+}
+/* Offers */
+#wrap section:nth-child(8) > div {
+	text-align: center;
+	transition: all .3s ease-in-out; 
+	-moz-transition: all .3s ease-in-out; 
+	-webkit-transition: all .3s ease-in-out;
+	border-bottom: 1px solid #ddd;
+}
+#wrap section:nth-child(8) > div > div {
+	padding: 30px 0;
+}
+#wrap section:nth-child(8) > div:nth-child(2) {
+	border-right: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+}
+#wrap section:nth-child(8) > div:hover {
+	background: #e5a300;
+	color: #fff;
+}
+#wrap section:nth-child(8) > div > div span::before {
+	font-size: 56px;
+}
+#wrap section:nth-child(8) > div > div h4 {
+	margin: 20px 0;
+	font: 800 16px Montserrat;
+	text-transform: uppercase;
+}
+#wrap section:nth-child(8) > div > div p {
+	line-height: 24px;
+}
+/* Featured Projects */
+#wrap section:nth-child(9) .inner .container > .row:first-child {
+	margin: 20px 0;
+	text-align: center;
+}
+#wrap section:nth-child(9) .inner .container > .row:first-child p {
+	margin: 30px auto;
+	width: 70%;
+	line-height: 24px;
+}
+#wrap section:nth-child(9) .inner .container > .row:first-child ul li {
+	margin: 0;
+}
+#wrap section:nth-child(9) .inner .container > .row:first-child .nav-pills {
+	float: none;
+	margin: 0 auto;
+	width: 761px;
+}
+#wrap section:nth-child(9) .inner .container > .row:first-child .nav-pills > li {
+	padding: 10px 20px;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	font: 800 14px Montserrat;
+	color: #444;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+#wrap section:nth-child(9) .inner .container > .row:first-child .nav-pills > li:first-child {
+	border-left: 1px solid #ddd;
+}
+#wrap section:nth-child(9) .inner .container > .row:first-child .nav-pills > li:last-child {
+	border-right: 1px solid #ddd;
+}
+#wrap section:nth-child(9) .inner .container > .row:first-child .nav-pills > li:hover {
+	background: none;
+}
+#wrap section:nth-child(9) .inner .container > .row:first-child .nav-pills > li.active {
+	background: #e5a300;
+	border-color: #e5a300;
+	color: #fff;
+}
+#wrap section:nth-child(10) {
+	margin-top: -100px;
+	margin-bottom: -50px;
+}
+#wrap section:nth-child(10) .row {
+	margin: 0;
+	padding: 0;
+}
+#wrap section:nth-child(10) .row > div {
+	position: relative;
+	padding: 0;
+}
+#wrap section:nth-child(10) .row > div > div:nth-child(1) {
+	position: relative;
+	height: 213px;
+	overflow: hidden;
+}
+#wrap section:nth-child(10) .row > div > div:nth-child(1) img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	transition: all .15s ease-in-out; 
+	-moz-transition: all .15s ease-in-out; 
+	-webkit-transition: all .15s ease-in-out;
+}
+#wrap section:nth-child(10) .row > div:hover > div:nth-child(1) img {
+	width: 110%;
+}
+#wrap section:nth-child(10) .row > div > div:nth-child(1) > div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #000;
+	opacity: 0;
+	transition: all .15s ease-in-out; 
+	-moz-transition: all .15s ease-in-out; 
+	-webkit-transition: all .15s ease-in-out;
+}
+#wrap section:nth-child(10) .row > div:hover > div:nth-child(1) > div {
+	opacity: 0.75;
+	-moz-animation: fadeInUpCus2 .2s ease-in;
+	-webkit-animation: fadeInUpCus2 .2s ease-in;
+	animation:fadeInUpCus2 .2s ease-in;
+}
+#wrap section:nth-child(10) .row > div > div:nth-child(2) h3,
+#wrap section:nth-child(10) .row > div > div:nth-child(2) a {
+	position: absolute;
+	top: 100px;
+	left: 0;
+	right: 0;
+	margin: 0;
+	text-align: center;
+	font: 300 18px "Montserrat";
+	color: #fff;
+	text-transform: uppercase;
+	transition: all .3s ease-in-out; 
+	-moz-transition: all .3s ease-in-out; 
+	-webkit-transition: all .3s ease-in-out;
+	opacity: 0;
+}
+#wrap section:nth-child(10) .row > div > div:nth-child(2) h3 span {
+	font: 400 14px "Open Sans";
+	text-transform: initial;
+}
+#wrap section:nth-child(10) .row > div:hover > div:nth-child(2) h3 {
+	top: 50px;
+	opacity: 1;
+}
+#wrap section:nth-child(10) .row > div > div:nth-child(2) a {
+	opacity: 0;
+	top: 180px;
+	left: 30%;
+	right: 30%;
+	padding: 15px;
+	background: #e5a300;
+	color: #fff;
+	text-decoration: none;
+	font-size: 12px;
+}
+#wrap section:nth-child(10) .row > div:hover > div:nth-child(2) a {
+	top: 120px;
+	opacity: 1;
+	transition: all .3s ease-in-out; 
+	-moz-transition: all .3s ease-in-out; 
+	-webkit-transition: all .3s ease-in-out;
+}
+#wrap section:nth-child(10) .row > div > div:nth-child(2) a:hover {
+	opacity: 0.9;
+}
+/* Counters */
+#wrap section:nth-child(11) {
+	background: #333 url('../images/bg-counters.jpg') no-repeat fixed center center;
+	background-size: 100%;
+}
+#wrap section:nth-child(11) .row > div {
+	text-align: center;
+	color: #e5a300;
+}
+#wrap section:nth-child(11) .row > div > p:first-child {
+	font-size: 72px;
+}
+#wrap section:nth-child(11) .row > div > div {
+	margin: 20px auto;
+	width: 50px;
+	height: 2px;
+	background: #e5a300;
+}
+/* We Are Hiring */
+#wrap section:nth-child(12) {
+	text-align: center;
+	background: #eee url('../images/bg-hiring.jpg') no-repeat fixed center center;
+	background-size: 100%;
+}
+#wrap section:nth-child(12) p {
+	margin: 0 auto;
+	max-width: 800px;
+}
+#wrap section:nth-child(12) a {
+	display: block;
+	margin: 0 0 15px 0;
+	padding: 15px;
+	border: 1px solid #444;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #444;
+	font: 600 16px Montserrat;
+	transition: all .3s ease-in-out; 
+	-moz-transition: all .3s ease-in-out; 
+	-webkit-transition: all .3s ease-in-out;
+}
+#wrap section:nth-child(12) a:hover {
+	background: #444;
+	color: #fff;
+}
+/* Join Billio */
+#wrap section:nth-child(13),
+#wrap section:nth-child(13) .inner {
+	padding-bottom: 0;
+}
+#wrap section:nth-child(13) h3 {
+	font: 800 32px Montserrat;
+	color: #555;
+}
+#wrap section:nth-child(13) p {
+	line-height: 24px;
+}
+#wrap section:nth-child(13) .inner .container .row {
+	padding-bottom: 0;
+}
+#wrap section:nth-child(13) .inner .container .row .row {
+	margin: 20px 0 0 0;
+}
+#wrap section:nth-child(13) .inner .container .row .row > div {
+	padding-left: 0;
+	padding-right: 30px;
+}
+#wrap section:nth-child(13) .inner .container .row .row > div h3 {
+	font-size: 20px;
+}
+#wrap section:nth-child(13) .inner .container .row .row > div p {
+	line-height: 20px;
+}
+/* Logos */
+#wrap section:nth-child(14),
+#wrap section:nth-child(14) .inner {
+	padding: 0;
+}
+#wrap section:nth-child(14) .inner .row {
+	padding: 0;
+}
+#wrap section:nth-child(14) .inner .row div {
+	padding: 50px 0;
+	text-align: center;
+	border-top: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+#wrap section:nth-child(14) .inner .row div:last-child {
+	border-right: none;
+}
+/* Free Quote */
+#wrap section:nth-child(15) {
+	text-align: center;
+	background: #fff url('../images/bg-gold.jpg') repeat fixed center center;
+	color: #fff;
+}
+#wrap section:nth-child(15) h2 {
+	color: #fff;
+}
+#wrap section:nth-child(15) a {
+	padding: 10px 25px;
+	border: 1px solid #fff;
+	color: #fff;
+	text-decoration: none;
+	font: 800 18px Montserrat;
+	text-transform: uppercase;
+	line-height: 100px;
+	transition: all .3s ease-in-out; 
+	-moz-transition: all .3s ease-in-out; 
+	-webkit-transition: all .3s ease-in-out;
+}
+#wrap section:nth-child(15) a:hover {
+	background: #fff;
+	color: #444;
+}
