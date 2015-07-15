@@ -193,3 +193,21 @@ body {
 	color: #9f9f9f;
 	text-decoration: none;
 }
+/* Footer Area */
+#footerArea {
+	background: #333;
+	color: #999;
+}
+#footerArea .inner {
+	padding: 20px 0 !important;
+}
+#footerArea .container > div:first-child {
+	margin-top: 15px;
+}
+#footerArea .container > div:last-child > div {
+	padding: 0;
+	text-align: center;
+}
+#footerArea .container > div:last-child > div > img {
+	max-width: 100%;
+}
