@@ -1,0 +1,76 @@
+/* BANNER */
+.carousel-inner {
+	height: 500px;
+}
+.carousel-inner > .item > img {
+	margin-top: -10%;
+	width: 100%;
+}
+#banner > div > img {
+	position: absolute;
+	top: 100px;
+	left: 0;
+	right: 0;	
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+}
+/* Section Header */
+.sectionHeader {
+	padding: 120px 20px 70px 20px;
+	text-align: center;
+	background: #333;
+	background-position: fixed;
+	background-size: 100%;
+	border: 0;
+	color: #fff;
+	font-size: 36px;
+	font-weight: 900;
+	text-transform: uppercase;
+	line-height: 48px;
+}
+#aboutUsHeader {
+	background: #333 url('../images/bg-about.jpg') repeat fixed -500px center;
+}
+#specialOrders {
+	background: #333 url('../images/bg-order.jpg') repeat fixed -500px center;
+}
+#faqArea {
+	background: #333 url('../images/bg-faq.jpg') repeat fixed -500px center;
+}
+/* Section */
+section .row span {
+	display: inline !important;
+}
+section .row div > img {
+	width: 100%;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 767px) {
+	.carousel-inner > .item > img {
+		width: initial;
+		max-width: initial;
+	}
+	.navbar {
+		margin-bottom: 0;
+	}
+	.navbar-nav {
+		float: none;
+	}
+	.navbar-nav > li > a {
+		float: none;
+		display: block;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	.navbar-nav > li {
+		text-align: right;
+	}
+}
+@media (max-width: 380px) {
+	#banner > div > img {
+		width: 80%;
+	}
+}
